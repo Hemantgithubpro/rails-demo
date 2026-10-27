@@ -1,2 +1,15 @@
-<h1>Say#goodbye</h1>
+<%# <h1>Say#goodbye</h1> %>
+<h1>Goodbye</h1>
 <p>Find me in app/views/say/goodbye.html.erb</p>
+<div> <%= 1+2 %> </div>
+
+<div> <%= "cow" + "boy" %> </div>
+
+<div> <%= 1.hour.from_now.localtime %> </div>
+
+<div>
+  <% @files = Dir.glob('*') %>
+  <% @files.each do |file| %>
+    <p><%= file %></p>
+  <% end %>
+</div>
